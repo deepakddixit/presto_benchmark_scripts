@@ -1,0 +1,26 @@
+{
+    "query": {
+        "query": [
+            "q.*"
+        ],
+        "schema": [],
+        "session": {
+            "generic_cache_enabled": "true",
+            "tpch.generic_cache_enabled": "true",
+            "tpcds.generic_cache_enabled": "true",
+            "query_max_stage_count": "250"
+        }
+    },
+    "load": {
+        "query": [
+            ".*"
+        ],
+        "schema": [],
+        "session": {
+            "generic_cache_enabled": "true",
+            "tpch.generic_cache_enabled": "true",
+            "tpcds.generic_cache_enabled": "true",
+            "query_max_stage_count": "250"
+        }
+    }
+}

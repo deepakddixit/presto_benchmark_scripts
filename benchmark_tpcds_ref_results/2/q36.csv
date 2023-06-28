@@ -1,0 +1,100 @@
+-0.43,,,2,1
+-0.44,"Children                                          ",,1,1
+-0.44,"Jewelry                                           ",,1,1
+-0.44,"Sports                                            ",,1,1
+-0.44,,,1,1
+-0.43,"Books                                             ",,1,5
+-0.43,"Electronics                                       ",,1,5
+-0.43,"Home                                              ",,1,5
+-0.43,"Men                                               ",,1,5
+-0.43,"Music                                             ",,1,5
+-0.43,"Shoes                                             ",,1,5
+-0.43,"Women                                             ",,1,5
+-0.48,"Books                                             ",,0,1
+-0.45,"Books                                             ","arts                                              ",0,2
+-0.45,"Books                                             ","mystery                                           ",0,2
+-0.44,"Books                                             ","business                                          ",0,4
+-0.44,"Books                                             ","computers                                         ",0,4
+-0.44,"Books                                             ","entertainments                                    ",0,4
+-0.44,"Books                                             ","fiction                                           ",0,4
+-0.44,"Books                                             ","romance                                           ",0,4
+-0.44,"Books                                             ","science                                           ",0,4
+-0.43,"Books                                             ","cooking                                           ",0,10
+-0.43,"Books                                             ","reference                                         ",0,10
+-0.43,"Books                                             ","self-help                                         ",0,10
+-0.43,"Books                                             ","sports                                            ",0,10
+-0.42,"Books                                             ","history                                           ",0,14
+-0.42,"Books                                             ","travel                                            ",0,14
+-0.41,"Books                                             ","home repair                                       ",0,16
+-0.41,"Books                                             ","parenting                                         ",0,16
+-0.44,"Children                                          ","infants                                           ",0,1
+-0.44,"Children                                          ","newborn                                           ",0,1
+-0.44,"Children                                          ","toddlers                                          ",0,1
+-0.43,"Children                                          ","school-uniforms                                   ",0,4
+-0.43,"Children                                          ",,0,4
+-0.46,"Electronics                                       ","wireless                                          ",0,1
+-0.45,"Electronics                                       ","automotive                                        ",0,2
+-0.45,"Electronics                                       ","camcorders                                        ",0,2
+-0.45,"Electronics                                       ","karoke                                            ",0,2
+-0.45,"Electronics                                       ","musical                                           ",0,2
+-0.44,"Electronics                                       ","memory                                            ",0,6
+-0.44,"Electronics                                       ","televisions                                       ",0,6
+-0.43,"Electronics                                       ","audio                                             ",0,8
+-0.43,"Electronics                                       ","cameras                                           ",0,8
+-0.43,"Electronics                                       ","dvd/vcr players                                   ",0,8
+-0.43,"Electronics                                       ","portable                                          ",0,8
+-0.42,"Electronics                                       ","disk drives                                       ",0,12
+-0.42,"Electronics                                       ","monitors                                          ",0,12
+-0.42,"Electronics                                       ","personal                                          ",0,12
+-0.42,"Electronics                                       ","scanners                                          ",0,12
+-0.42,"Electronics                                       ","stereo                                            ",0,12
+-0.31,"Electronics                                       ",,0,17
+-0.54,"Home                                              ",,0,1
+-0.47,"Home                                              ","wallpaper                                         ",0,2
+-0.45,"Home                                              ","decor                                             ",0,3
+-0.45,"Home                                              ","furniture                                         ",0,3
+-0.44,"Home                                              ","lighting                                          ",0,5
+-0.44,"Home                                              ","tables                                            ",0,5
+-0.43,"Home                                              ","bathroom                                          ",0,7
+-0.43,"Home                                              ","blinds/shades                                     ",0,7
+-0.43,"Home                                              ","curtains/drapes                                   ",0,7
+-0.43,"Home                                              ","flatware                                          ",0,7
+-0.43,"Home                                              ","kids                                              ",0,7
+-0.43,"Home                                              ","paint                                             ",0,7
+-0.43,"Home                                              ","rugs                                              ",0,7
+-0.42,"Home                                              ","accent                                            ",0,14
+-0.42,"Home                                              ","mattresses                                        ",0,14
+-0.41,"Home                                              ","glassware                                         ",0,16
+-0.40,"Home                                              ","bedding                                           ",0,17
+-0.60,"Jewelry                                           ",,0,1
+-0.47,"Jewelry                                           ","costume                                           ",0,2
+-0.45,"Jewelry                                           ","diamonds                                          ",0,3
+-0.45,"Jewelry                                           ","earings                                           ",0,3
+-0.45,"Jewelry                                           ","jewelry boxes                                     ",0,3
+-0.45,"Jewelry                                           ","loose stones                                      ",0,3
+-0.44,"Jewelry                                           ","bracelets                                         ",0,7
+-0.44,"Jewelry                                           ","gold                                              ",0,7
+-0.44,"Jewelry                                           ","rings                                             ",0,7
+-0.44,"Jewelry                                           ","semi-precious                                     ",0,7
+-0.43,"Jewelry                                           ","mens watch                                        ",0,11
+-0.43,"Jewelry                                           ","womens watch                                      ",0,11
+-0.42,"Jewelry                                           ","birdal                                            ",0,13
+-0.42,"Jewelry                                           ","consignment                                       ",0,13
+-0.42,"Jewelry                                           ","custom                                            ",0,13
+-0.42,"Jewelry                                           ","estate                                            ",0,13
+-0.41,"Jewelry                                           ","pendants                                          ",0,17
+-0.44,"Men                                               ","pants                                             ",0,1
+-0.44,"Men                                               ","sports-apparel                                    ",0,1
+-0.43,"Men                                               ","accessories                                       ",0,3
+-0.43,"Men                                               ","shirts                                            ",0,3
+-0.21,"Men                                               ",,0,5
+-0.49,"Music                                             ",,0,1
+-0.43,"Music                                             ","classical                                         ",0,2
+-0.43,"Music                                             ","country                                           ",0,2
+-0.43,"Music                                             ","pop                                               ",0,2
+-0.43,"Music                                             ","rock                                              ",0,2
+-0.43,"Shoes                                             ","athletic                                          ",0,1
+-0.43,"Shoes                                             ","kids                                              ",0,1
+-0.43,"Shoes                                             ","mens                                              ",0,1
+-0.43,"Shoes                                             ","womens                                            ",0,1
+-0.40,"Shoes                                             ",,0,5

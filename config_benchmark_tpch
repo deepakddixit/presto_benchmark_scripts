@@ -1,0 +1,29 @@
+prefix=tpch
+scale=tiny
+
+# Generic props
+presto_host=localhost
+presto_port=8080
+username=benchmark
+
+query_runs=3
+query_warm=1
+query_suite_itr=8
+
+debug=true
+run_randomly=false
+multipleQueriesInSingleFile=false
+
+refResultsDir=benchmark_"$prefix"_ref_results/$scale
+
+# Query releated props
+query_dir=benchmark_"$prefix"/sql
+
+query_remote_catalog=tpch
+query_remote_schema=tiny
+
+# benchmark output related props dont edit
+suite=query
+artifact_output="out_""$suite"_"$prefix"_"$scale"_"$query_remote_catalog"_"$query_remote_schema"
+jsonsDirC=qjsons
+resultsDirC=qresults

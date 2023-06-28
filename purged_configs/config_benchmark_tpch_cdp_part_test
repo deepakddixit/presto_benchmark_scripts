@@ -1,0 +1,34 @@
+prefix=tpch
+#scale=10
+#scale=tiny
+scale=2
+
+# generic props
+presto_host=mip-bd-vm139.mip.storage.hpecorp.net
+presto_port=32234
+query_runs=1
+query_warm=0
+query_suite_itr=3
+debug=true
+run_randomly=false
+multipleQueriesInSingleFile=false
+jsonsDir=qjsons
+resultsDir=qresults
+#refResultsDir=benchmark_"$prefix"_ref_results/$scale
+refResultsDir=benchmark_"$prefix"_ref_results/$scale
+
+# query related props
+query_dir=benchmark_"$prefix"/sql
+#query_dir=benchmark_"$prefix"/sql/sf_$scale
+#query_remote_catalog=cache
+#query_remote_catalog=tpcds
+#query_remote_schema=sf$scale
+#query_remote_schema=tiny
+query_remote_catalog=cdp
+#query_remote_catalog=mysql
+#query_remote_schema=tpcds010
+#query_remote_schema=tiny
+#query_remote_schema=tpcdstiny
+#query_remote_schema=tpcds_tiny
+query_remote_schema=tpch_partitioned_orc_2
+#query_remote_schema=tpch010

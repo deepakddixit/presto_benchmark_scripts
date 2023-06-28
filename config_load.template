@@ -1,0 +1,49 @@
+prefix=tpcds
+scale=2
+
+# Generic props
+presto_host=localhost
+presto_port=32234
+username=benchmark
+
+# for loading it should these values only
+query_runs=1
+query_warm=0
+query_suite_itr=1
+
+debug=true
+run_randomly=false
+multipleQueriesInSingleFile=false
+# query regex filter which will pick matching query files like (nation|region)* will pick nation.sql and region.sql files from dir
+query_regex=".*"
+
+create_schema=true
+
+# should we replace source_catalog and source_schema from load queries
+replace_values=true
+temp_query_dir=/tmp/
+
+source_catalog=tpcds
+source_schema=sf"$scale"
+
+dest_catalog=cache
+dest_schema="$source_catalog"_"$source_schema"
+
+load_query_dir=data_load_"$prefix"/sql
+drop_query_dir=data_drop_"$prefix"/sql
+
+
+# with clause table properties
+
+with_default=""
+
+# can be overriden with key as filename=<value>
+#with_call_center="with (\"ampool.buckets\"=1, \"ampool.block.size\"=1, \"ampool.block.format\"='AMP_COLUMNAR_OFF_HEAP', \"ampool.table.type\"='IMMUTABLE', \"ampool.redundancy\"=0)"
+#with_warehouse="with (\"ampool.buckets\"=1, \"ampool.block.size\"=1, \"ampool.block.format\"='AMP_COLUMNAR_OFF_HEAP', \"ampool.table.type\"='IMMUTABLE', \"ampool.redundancy\"=0)"
+
+# dont edit below props
+suite=load
+artifact_output="out_""$suite"_"$prefix"_"$scale"_"$source_catalog"_"$source_schema"
+jsonsDirC=qjsons
+resultsDirC=qresults
+
