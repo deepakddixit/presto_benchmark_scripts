@@ -7,12 +7,13 @@ outfileext="$outfile".extract
 rm -r $outfile
 rm -r $outfileext
 
-echo "Filename! QueryId ! QueryText ! queryType ! InputTables ! InputTablesCount ! ExplicitTablesUsed ! ExplicitTablesUsedCount ! NonReplacedTables ! NonReplacedTablesCount " >> $outfile
+echo "Filename! QueryId ! QueryText ! queryType ! queryUser ! InputTables ! InputTablesCount ! ExplicitTablesUsed ! ExplicitTablesUsedCount ! NonReplacedTables ! NonReplacedTablesCount ! PeakUserMemory ! PeakTotalMemory ! queryExecTime " >> $outfile
 
 for queryJsonFile in $jsondir/*.json; do
-    echo "Query json file : $queryJsonFile"
+   echo "Query json file : $queryJsonFile"
 
-    queryType=$(cat $queryJsonFile| jq '.queryType')
+   queryType=$(cat $queryJsonFile| jq '.queryType')
+   queryUser=$(cat $queryJsonFile| jq '.session.user')
 
    # get executed query text
    queryText=$(cat $queryJsonFile| jq '.query')
@@ -40,7 +41,11 @@ for queryJsonFile in $jsondir/*.json; do
    # input table will be cached table when replaced so diff between input and eutables should be zero for full replacements
    nonreplacedtablesarr=(`echo ${itablesarr[@]} ${eutablesarr[@]} | tr ' ' '\n' | sort | uniq -u `)
 
-   echo "$queryJsonFile ! $queryid ! $queryText ! $queryType ! ${itablesarr[@]} ! ${#itablesarr[@]} ! ${eutablesarr[@]} ! ${#eutablesarr[@]} ! ${nonreplacedtablesarr[@]} ! ${#nonreplacedtablesarr[@]}" >> $outfile
+   PeakUserMemory=$(cat $queryJsonFile| jq '.queryStats.peakUserMemoryReservation')
+   PeakTotalMemory=$(cat $queryJsonFile| jq '.queryStats.peakTotalMemoryReservation')
+   queryExecTime=$(cat $queryJsonFile| jq '.queryStats.elapsedTime')
+
+   echo "$queryJsonFile ! $queryid ! $queryText ! $queryType ! $queryUser ! ${itablesarr[@]} ! ${#itablesarr[@]} ! ${eutablesarr[@]} ! ${#eutablesarr[@]} ! ${nonreplacedtablesarr[@]} ! ${#nonreplacedtablesarr[@]} ! $PeakUserMemory ! $PeakTotalMemory ! $queryExecTime " >> $outfile
 
    # create extract file to compare across
    echo "$queryType ! ${#itablesarr[@]} ! ${#eutablesarr[@]} ! ${#nonreplacedtablesarr[@]}" >> $outfileext
