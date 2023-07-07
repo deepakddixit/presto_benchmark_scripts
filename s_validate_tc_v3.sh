@@ -48,5 +48,5 @@ for queryJsonFile in $jsondir/*.json; do
    echo "$queryJsonFile ! $queryid ! $queryText ! $queryType ! $queryUser ! ${itablesarr[@]} ! ${#itablesarr[@]} ! ${eutablesarr[@]} ! ${#eutablesarr[@]} ! ${nonreplacedtablesarr[@]} ! ${#nonreplacedtablesarr[@]} ! $PeakUserMemory ! $PeakTotalMemory ! $queryExecTime " >> $outfile
 
    # create extract file to compare across
-   echo "$queryType ! ${#itablesarr[@]} ! ${#eutablesarr[@]} ! ${#nonreplacedtablesarr[@]}" >> $outfileext
+   echo "$queryType ! $queryid ! ${#itablesarr[@]} ! ${#eutablesarr[@]} ! ${#nonreplacedtablesarr[@]}" >> $outfileext
 done
