@@ -41,9 +41,9 @@ for queryJsonFile in $jsondir/*.json; do
    # input table will be cached table when replaced so diff between input and eutables should be zero for full replacements
    nonreplacedtablesarr=(`echo ${itablesarr[@]} ${eutablesarr[@]} | tr ' ' '\n' | sort | uniq -u `)
 
-   PeakUserMemory=$(cat $queryJsonFile| jq '.queryStats.peakUserMemoryReservation')
-   PeakTotalMemory=$(cat $queryJsonFile| jq '.queryStats.peakTotalMemoryReservation')
-   queryExecTime=$(cat $queryJsonFile| jq '.queryStats.elapsedTime')
+   PeakUserMemory=$(cat $queryJsonFile| jq '.queryStats.peakUserMemoryReservation' | sed -e 's/\"//g')
+   PeakTotalMemory=$(cat $queryJsonFile| jq '.queryStats.peakTotalMemoryReservation' | sed -e 's/\"//g')
+   queryExecTime=$(cat $queryJsonFile| jq '.queryStats.elapsedTime' | sed -e 's/\"//g')
 
    echo "$queryJsonFile ! $queryid ! $queryText ! $queryType ! $queryUser ! ${itablesarr[@]} ! ${#itablesarr[@]} ! ${eutablesarr[@]} ! ${#eutablesarr[@]} ! ${nonreplacedtablesarr[@]} ! ${#nonreplacedtablesarr[@]} ! $PeakUserMemory ! $PeakTotalMemory ! $queryExecTime " >> $outfile
 
